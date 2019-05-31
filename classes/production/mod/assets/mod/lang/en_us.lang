@@ -1,0 +1,24 @@
+//Tabs
+itemGroup.DarkSun=Dark Sun
+
+//items
+item.onyx_shard.name=Onyx Shard
+item.onyx_chunk.name=Onyx Chunk
+item.onyx_cluster.name=Onyx Cluster
+item.blacksun_talisman.name=Talisman of the Black Sun
+item.blacksun_talisman_charged.name=Talisman of the Black Sun (blazing)
+item.imperfect_aer_crystal.name=Aer Crystal
+item.imperfect_pyr_crystal.name=Pyr Crystal
+item.imperfect_ge_crystal.name=Ge Crystal
+item.imperfect_aither_crystal.name=Aither Crystal
+item.imperfect_hydor_crystal.name=Hydor Crystal
+item.catalyst.name=Catalyst
+
+//blocks
+tile.onyx_ore_block.name=Onyx Cluster
+tile.fire_bowl_block.name=Fire Bowl
+tile.aer_ore_block.name=Aer Cluster
+tile.pyr_ore_block.name=Pyr Cluster
+tile.ge_ore_block.name=Ge Cluster
+tile.hydor_ore_block.name=Hydor Cluster
+tile.aither_ore_block.name=Aither Cluster

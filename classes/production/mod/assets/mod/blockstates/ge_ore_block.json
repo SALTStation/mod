@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "mod:ge_ore_block" }
+    }
+}

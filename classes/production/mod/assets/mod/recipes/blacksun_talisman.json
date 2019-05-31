@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "III",
+        "IOI",
+        "III"
+    ],
+   
+    "key":
+    {
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+		"O":
+        {
+            "item": "mod:onyx_shard"
+        }
+    },
+   
+    "result":
+    {
+        "item": "mod:blacksun_talisman",
+        "count": 1
+    }
+}
