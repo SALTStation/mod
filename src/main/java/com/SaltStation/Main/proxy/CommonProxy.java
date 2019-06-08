@@ -2,19 +2,17 @@ package com.SaltStation.Main.proxy;
 
 import net.minecraft.item.Item;
 
-public class CommonProxy {
+public class CommonProxy implements IProxy {
 
-    public void preInit() {
 
+    @Override
+    public void registerItemRenderer(Item item, int meta, String id) {
 
     }
 
-    public void init() {}
+    @Override
+    public void registerEntityRenderer() {
 
-    public void postInit() {}
-
-
-    public void registerItemRenderer(Item item, int meta, String id) {
     }
 
 }

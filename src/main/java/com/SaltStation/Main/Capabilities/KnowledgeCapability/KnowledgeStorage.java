@@ -16,7 +16,7 @@ public class KnowledgeStorage implements Capability.IStorage<IKnowledge> {
         tag.setString("current_spell", instance.getSpell());
         tag.setBoolean("guro", instance.getKnowledge("guro"));
 
-        System.out.println("written to NBT(Fatigue): "+instance.getKnowledge("guro"));
+        System.out.println("written to NBT(Knawledge): "+instance.getKnowledge("guro"));
 
 
         return tag;
@@ -29,7 +29,7 @@ public class KnowledgeStorage implements Capability.IStorage<IKnowledge> {
         instance.setSpell(tag.getString("current_spell"));
         instance.setKnowledge("guro",tag.getBoolean("guro"));
 
-        System.out.println("read from NBT(Fatigue): "+instance.getKnowledge("guro"));
+        System.out.println("read from NBT(Knawledge): "+instance.getKnowledge("guro"));
 
 
     }

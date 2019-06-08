@@ -2,10 +2,12 @@ package com.SaltStation.Main;
 
 
 import com.SaltStation.Main.Capabilities.FatigueCapability.Fatigue;
+import com.SaltStation.Main.Capabilities.FatigueCapability.FatigueFactory;
 import com.SaltStation.Main.Capabilities.FatigueCapability.FatigueStorage;
 import com.SaltStation.Main.Capabilities.FatigueCapability.IFatigue;
 import com.SaltStation.Main.Capabilities.KnowledgeCapability.IKnowledge;
 import com.SaltStation.Main.Capabilities.KnowledgeCapability.Knowledge;
+import com.SaltStation.Main.Capabilities.KnowledgeCapability.KnowledgeFactory;
 import com.SaltStation.Main.Capabilities.KnowledgeCapability.KnowledgeStorage;
 import com.SaltStation.Main.handlers.GuiHandeler;
 import com.SaltStation.Main.handlers.events.CapabilityHandeler;
@@ -44,8 +46,8 @@ public class Main {
     @Mod.EventHandler
     public void PreInit(FMLPreInitializationEvent event){
 
-        CapabilityManager.INSTANCE.register(IFatigue.class,new FatigueStorage(),()->new Fatigue());
-        CapabilityManager.INSTANCE.register(IKnowledge.class,new KnowledgeStorage(),()->new Knowledge());
+        CapabilityManager.INSTANCE.register(IFatigue.class,new FatigueStorage(),new FatigueFactory());
+        CapabilityManager.INSTANCE.register(IKnowledge.class,new KnowledgeStorage(),new KnowledgeFactory());
         MinecraftForge.EVENT_BUS.register(new PartikelEventListener());
         MinecraftForge.EVENT_BUS.register(new FatiguePlayerHandeler());
         MinecraftForge.EVENT_BUS.register(new KnowledgePlayerHandeler());
